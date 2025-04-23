@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+  }
+  
+  /* Card & Section Styles */
+  .card {
+    border: none;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+  }
+  
+  .card-header {
+    background-color: #0069d9;
+    color: white;
+    font-size: 1.25rem;
+    padding: 1rem;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  h2, h3, h5 {
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  section {
+    margin-top: 2rem;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #0069d9;
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #28a745;
+    border: none;
+    font-weight: 600;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #218838;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border: none;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  /* Upload Section */
+  #upload .form-label {
+    font-weight: 600;
+  }
+  
+  #upload .form-control {
+    border-radius: 12px;
+  }
+  
+  #upload .btn-primary {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  /* Dropzone Styles */
+  .dropzone {
+    border: 2px dashed #0069d9;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .dropzone:hover {
+    background-color: #e6f7ff;
+    border-color: #0056b3;
+  }
+  
+  /* Loading Spinner */
+  .spinner {
+    display: none;
+  }
+  
+  /* Output Section */
+  #output {
+    margin-top: 2rem;
+    display: none;
+  }
+  
+  #output .alert {
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #0069d9;
+    color: white;
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  /* About Section */
+  #about {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  #about p {
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  #about ul {
+    margin-top: 1rem;
+  }
+  
+  /* FAQ Section */
+  #faq {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  #faq ul {
+    padding-left: 30px;
+  }
+  
+  #faq li {
+    margin-bottom: 1rem;
+  }
+  
+  #faq li strong {
+    font-size: 1.1rem;
+    color: #007bff;
+  }
+  
+  /* Animations */
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card, #faq, #about {
+    animation: slideUp 0.5s ease-out;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0.5rem 1rem;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 0.9rem;
+    }
+  
+    .card-body {
+      padding: 1.5rem;
+    }
+  
+    .dropzone {
+      padding: 20px;
+    }
+  
+    #upload .btn-primary {
+      padding: 1rem;
+    }
+  }
+  
